@@ -21,4 +21,24 @@ echo "Saya juga suka motor " . $motor[0] . ".<br>";
 echo "<pre>";
 print_r($mobil);
 echo "</pre>";
+echo "<hr>";
+
+// 2. Array Asosiatif
+echo "<h2>2. Array Asosiatif</h2>";
+// Array asosiatif adalah array yang menggunakan nama kunci (key) yang Anda tentukan sendiri.
+
+$umur = array("Peter" => "35", "Ben" => "37", "Joe" => "43");
+// atau
+$nilai = [
+    "Budi" => 80,
+    "Ani" => 90,
+    "Candra" => 75
+];
+
+echo "Umur Peter adalah " . $umur['Peter'] . " tahun.<br>";
+echo "Nilai Budi adalah " . $nilai['Budi'] . ".<br>";
+
+echo "<pre>";
+print_r($nilai);
+echo "</pre>";
 ?>
