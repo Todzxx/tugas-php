@@ -91,4 +91,20 @@ function tambahGlobal() {
 
 tambahGlobal();
 echo "Nilai y setelah fungsi: " . $y . "<br>"; // Output: 15
+cetakGaris();
+
+// 5. Praktik Terbaik dan Perbedaan Konsep Prosedur dan Fungsi
+echo "<h2>5. Praktik Terbaik dan Perbedaan Konsep</h2>";
+echo "<p>Meskipun PHP tidak membedakan secara sintaksis, secara konseptual:</p>";
+echo "<ul>";
+echo "<li><b>Fungsi (Function):</b> Sebaiknya dirancang untuk mengembalikan suatu nilai. Fokus pada 'apa' yang dihitung atau dihasilkan.</li>";
+echo "<li><b>Prosedur (Procedure):</b> Sebaiknya dirancang untuk melakukan suatu aksi atau efek samping (misalnya mencetak ke layar, menyimpan ke database) dan tidak perlu mengembalikan nilai. Fokus pada 'bagaimana' suatu aksi dilakukan.</li>";
+echo "</ul>";
+echo "<p><b>Praktik Terbaik:</b></p>";
+echo "<ul>";
+echo "<li>Berikan nama fungsi yang deskriptif.</li>";
+echo "<li>Fungsi harus melakukan satu tugas saja (Single Responsibility Principle).</li>";
+echo "<li>Gunakan parameter untuk input dan nilai kembalian untuk output.</li>";
+echo "<li>Hindari penggunaan variabel global di dalam fungsi jika memungkinkan, lebih baik gunakan parameter atau kembalian.</li>";
+echo "</ul>";
 ?>
