@@ -68,4 +68,29 @@ echo "Nilai pertama mahasiswa pertama: " . $mahasiswa[0]["nilai"][0] . "<br>";
 echo "<pre>";
 print_r($mahasiswa);
 echo "</pre>";
+echo "<hr>";
+
+// 4. Melakukan Perulangan pada Array
+echo "<h2>4. Melakukan Perulangan pada Array</h2>";
+
+// Menggunakan foreach (paling umum)
+echo "<h3>Menggunakan foreach</h3>";
+$warna = ["merah", "hijau", "biru"];
+foreach ($warna as $w) {
+    echo $w . "<br>";
+}
+
+// Menggunakan foreach dengan key dan value
+echo "<h3>Menggunakan foreach dengan key dan value</h3>";
+$data_user = ["nama" => "John Doe", "email" => "john@example.com"];
+foreach ($data_user as $key => $value) {
+    echo ucfirst($key) . ": " . $value . "<br>";
+}
+
+// Menggunakan for (untuk array terindeks)
+echo "<h3>Menggunakan for</h3>";
+$buah = ["Apel", "Jeruk", "Mangga"];
+for ($i = 0; $i < count($buah); $i++) {
+    echo $buah[$i] . "<br>";
+}
 ?>
