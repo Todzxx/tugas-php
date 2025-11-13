@@ -82,4 +82,45 @@ $k = 5;
 echo "Pre-decrement (--k): " . (--$k) . ", sekarang k = " . $k . "<br>"; // 4, k=4
 $l = 5;
 echo "Post-decrement (l--): " . ($l--) . ", sekarang l = " . $l . "<br>"; // 5, l=4
+echo "<hr>";
+
+// 5. Operator Logika
+echo "<h2>5. Operator Logika</h2>";
+$umur = 20;
+$punya_sim = true;
+
+echo "Umur >= 18 AND Punya SIM: " . var_export(($umur >= 18 and $punya_sim), true) . "<br>"; // true
+echo "Umur < 18 OR Punya SIM: " . var_export(($umur < 18 or $punya_sim), true) . "<br>"; // true
+echo "NOT Punya SIM: " . var_export((!$punya_sim), true) . "<br>"; // false
+echo "<hr>";
+
+// 6. Operator String
+echo "<h2>6. Operator String</h2>";
+$str1 = "Hello";
+$str2 = " World!";
+$gabung = $str1 . $str2; // Operator konkatenasi
+echo "Gabungan: " . $gabung . "<br>"; // "Hello World!"
+
+$str3 = "PHP";
+$str3 .= " is awesome!"; // Operator penugasan konkatenasi
+echo "str3: " . $str3 . "<br>"; // "PHP is awesome!"
+echo "<hr>";
+
+// 7. Operator Array
+echo "<h2>7. Operator Array</h2>";
+$arr1 = array("a" => "apel", "b" => "pisang");
+$arr2 = array("c" => "ceri", "a" => "anggur");
+
+$gabung_array = $arr1 + $arr2; // Union
+echo "Union Array: ";
+print_r($gabung_array); // Array ( [a] => apel [b] => pisang [c] => ceri )
+echo "<br>";
+
+$arr3 = array("apel", "pisang");
+$arr4 = array("apel", "pisang");
+$arr5 = array("jeruk", "mangga");
+
+echo "arr3 == arr4: " . var_export($arr3 == $arr4, true) . "<br>"; // true (key-value pairs sama)
+echo "arr3 === arr4: " . var_export($arr3 === $arr4, true) . "<br>"; // true (key-value pairs dan urutan sama)
+echo "arr3 != arr5: " . var_export($arr3 != $arr5, true) . "<br>"; // true
 ?>
