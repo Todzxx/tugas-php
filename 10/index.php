@@ -93,4 +93,33 @@ function jumlahkanSemua(...$angka) {
 
 echo "Jumlah dari 1, 2, 3 adalah: " . jumlahkanSemua(1, 2, 3) . "<br>";
 echo "Jumlah dari 10, 20, 30, 40 adalah: " . jumlahkanSemua(10, 20, 30, 40) . "<br>";
+echo "<hr>";
+
+// 5. Fungsi Anonim (Closures) & Arrow Functions (PHP 7.4+)
+echo "<h2>5. Fungsi Anonim (Closures) & Arrow Functions</h2>";
+
+// Fungsi Anonim (Anonymous Functions / Closures)
+// Fungsi tanpa nama yang dapat disimpan dalam variabel dan diteruskan sebagai argumen.
+$salamAnonim = function($nama) {
+    echo "Halo anonim, " . $nama . "!<br>";
+};
+$salamAnonim("Dunia");
+
+// Contoh penggunaan fungsi anonim dengan use
+$pengali = 2;
+$kalikan = function($angka) use ($pengali) {
+    return $angka * $pengali;
+};
+echo "Hasil perkalian dengan fungsi anonim: " . $kalikan(5) . "<br>"; // Output: 10
+
+// Arrow Functions (sejak PHP 7.4)
+// Bentuk singkat dari fungsi anonim, cocok untuk fungsi satu baris.
+// fn(arguments) => expression;
+$tambahSatu = fn($num) => $num + 1;
+echo "Hasil tambah satu dengan arrow function: " . $tambahSatu(10) . "<br>"; // Output: 11
+
+$filterAngka = array_filter([1, 2, 3, 4, 5], fn($num) => $num % 2 == 0);
+echo "Angka genap dari array: <pre>";
+print_r($filterAngka);
+echo "</pre>";
 ?>
