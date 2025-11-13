@@ -16,4 +16,17 @@ while ($i <= 5) {
     echo "Angka: " . $i . "<br>";
     $i++;
 }
+echo "<hr>";
+
+// 2. Perulangan do-while
+echo "<h2>2. Perulangan do-while</h2>";
+// Perulangan do-while akan mengeksekusi blok kode setidaknya satu kali,
+// kemudian akan mengulang selama kondisi yang ditentukan bernilai true.
+// Kondisi diperiksa setelah setiap iterasi.
+
+$j = 1;
+do {
+    echo "Angka: " . $j . "<br>";
+    $j++;
+} while ($j <= 5);
 ?>
