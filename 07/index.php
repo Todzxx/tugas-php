@@ -60,4 +60,38 @@ $jenis_kelamin = "Pria";
 $sapaan = ($jenis_kelamin == "Pria") ? "Bapak" : "Ibu";
 
 echo "Sapaan: " . $sapaan;
+echo "<hr>";
+
+// 5. Statement switch
+echo "<h2>5. Statement switch</h2>";
+// Alternatif untuk if-elseif-else yang membandingkan satu variabel dengan banyak nilai.
+
+$hari = "Selasa";
+echo "Hari ini hari: " . $hari . "<br>";
+
+switch ($hari) {
+    case "Senin":
+        echo "Hari ini adalah hari kerja.";
+        break;
+    case "Selasa":
+        echo "Hari ini adalah hari kerja.";
+        break;
+    case "Rabu":
+        echo "Hari ini adalah hari kerja.";
+        break;
+    case "Kamis":
+        echo "Hari ini adalah hari kerja.";
+        break;
+    case "Jumat":
+        echo "Hari ini adalah hari kerja, besok libur!";
+        break;
+    case "Sabtu":
+        echo "Hari ini adalah hari libur.";
+        break;
+    case "Minggu":
+        echo "Hari ini adalah hari libur.";
+        break;
+    default:
+        echo "Nama hari tidak valid.";
+}
 ?>
