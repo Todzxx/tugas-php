@@ -41,4 +41,31 @@ echo "Nilai Budi adalah " . $nilai['Budi'] . ".<br>";
 echo "<pre>";
 print_r($nilai);
 echo "</pre>";
+echo "<hr>";
+
+// 3. Array Multidimensi
+echo "<h2>3. Array Multidimensi</h2>";
+// Array yang berisi satu atau lebih array di dalamnya.
+
+$mahasiswa = [
+    [
+        "nama" => "Budi",
+        "jurusan" => "Teknik Informatika",
+        "nilai" => [80, 85, 90]
+    ],
+    [
+        "nama" => "Ani",
+        "jurusan" => "Sistem Informasi",
+        "nilai" => [88, 92, 95]
+    ]
+];
+
+// Mengakses nilai dalam array multidimensi
+echo "Nama mahasiswa pertama: " . $mahasiswa[0]["nama"] . "<br>";
+echo "Jurusan mahasiswa kedua: " . $mahasiswa[1]["jurusan"] . "<br>";
+echo "Nilai pertama mahasiswa pertama: " . $mahasiswa[0]["nilai"][0] . "<br>";
+
+echo "<pre>";
+print_r($mahasiswa);
+echo "</pre>";
 ?>
