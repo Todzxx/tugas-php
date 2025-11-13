@@ -11,4 +11,11 @@ echo "<h1>Apa itu Konstanta?</h1>";
 // Mendefinisikan konstanta menggunakan fungsi define()
 define("SALAM", "Halo, selamat datang!");
 echo SALAM; // Menampilkan nilai konstanta
+echo "<hr>";
+
+// Mendefinisikan konstanta menggunakan keyword const
+// const hanya bisa digunakan di top-level scope atau di dalam class.
+// const tidak bisa digunakan di dalam blok kondisional (if, else).
+const PI = 3.14;
+echo PI;
 ?>
