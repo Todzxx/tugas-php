@@ -1,0 +1,24 @@
+<?php
+// File ini akan berisi penjelasan tentang 7 Hal yang Harus Kamu Ketahui Tentang Array di PHP.
+
+echo "<h1>7 Hal yang Harus Kamu Ketahui Tentang Array di PHP</h1>";
+
+// Array adalah variabel khusus yang dapat menampung lebih dari satu nilai pada satu waktu.
+
+// 1. Apa itu Array dan Cara Membuat Array Terindeks
+echo "<h2>1. Apa itu Array dan Cara Membuat Array Terindeks</h2>";
+// Array terindeks adalah array dengan indeks numerik (dimulai dari 0).
+
+// Cara 1: Menggunakan fungsi array()
+$mobil = array("Volvo", "BMW", "Toyota");
+echo "Saya suka mobil " . $mobil[0] . ", " . $mobil[1] . ", dan " . $mobil[2] . ".<br>";
+
+// Cara 2: Menggunakan kurung siku [] (lebih modern, sejak PHP 5.4)
+$motor = ["Honda", "Yamaha", "Suzuki"];
+echo "Saya juga suka motor " . $motor[0] . ".<br>";
+
+// Menampilkan seluruh isi array untuk debugging
+echo "<pre>";
+print_r($mobil);
+echo "</pre>";
+?>
