@@ -44,4 +44,25 @@ function hitungJumlah($angka1, $angka2) {
 
 hitungJumlah(10, 5);
 hitungJumlah(20, 15);
+echo "<hr>";
+
+// 3. Nilai Kembalian (Return Values)
+echo "<h2>3. Nilai Kembalian (Return Values)</h2>";
+// Fungsi dapat mengembalikan nilai menggunakan statement return.
+
+function tambah($bil1, $bil2) {
+    $hasil = $bil1 + $bil2;
+    return $hasil; // Mengembalikan nilai hasil penjumlahan
+}
+
+$total = tambah(7, 3);
+echo "Hasil penjumlahan 7 + 3 adalah: " . $total . "<br>"; // Output: 10
+
+echo "Hasil penjumlahan 100 + 200 adalah: " . tambah(100, 200) . "<br>"; // Output: 300
+
+// Fungsi dengan tipe data kembalian (PHP 7+)
+function kali(int $num1, int $num2): int {
+    return $num1 * $num2;
+}
+echo "Hasil perkalian 4 * 5 adalah: " . kali(4, 5) . "<br>";
 ?>
