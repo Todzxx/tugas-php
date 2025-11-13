@@ -39,4 +39,21 @@ echo "<h2>3. Perulangan for</h2>";
 for ($k = 1; $k <= 5; $k++) {
     echo "Angka: " . $k . "<br>";
 }
+echo "<hr>";
+
+// 4. Perulangan foreach
+echo "<h2>4. Perulangan foreach</h2>";
+// Perulangan foreach digunakan untuk mengulang elemen-elemen dalam array atau objek.
+
+$warna = array("merah", "hijau", "biru");
+echo "Daftar Warna:<br>";
+foreach ($warna as $nilai_warna) {
+    echo "- " . $nilai_warna . "<br>";
+}
+
+$umur = array("Peter" => "35", "Ben" => "37", "Joe" => "43");
+echo "Daftar Umur:<br>";
+foreach ($umur as $nama => $nilai_umur) {
+    echo "- " . $nama . " berumur " . $nilai_umur . " tahun.<br>";
+}
 ?>
