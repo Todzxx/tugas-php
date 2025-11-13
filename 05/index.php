@@ -18,4 +18,16 @@ echo "<hr>";
 // const tidak bisa digunakan di dalam blok kondisional (if, else).
 const PI = 3.14;
 echo PI;
+echo "<hr>";
+
+// Aturan Penamaan dan Case-Sensitivity
+// Nama konstanta mengikuti aturan yang sama seperti variabel PHP (tidak boleh diawali angka).
+// Secara default, konstanta bersifat case-sensitive.
+define("NAMA", "Budi");
+echo NAMA; // OK
+// echo nama; // Error: Notice: Use of undefined constant nama
+
+// Parameter ketiga di define() bisa digunakan untuk membuat konstanta case-insensitive (TIDAK DIREKOMENDASIKAN).
+define("STATUS", "Aktif", true);
+echo status; // OK, karena case-insensitive
 ?>
