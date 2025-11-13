@@ -58,6 +58,7 @@ namaFungsi();
 class Coba {
     public function getClassName() {
         echo "Nama class ini adalah: " . __CLASS__ . "<br>";
+        echo "Nama method ini adalah: " . __METHOD__ . "<br>";
     }
 }
 $obj = new Coba();
@@ -73,7 +74,5 @@ class KelasDenganTrait {
 }
 $obj2 = new KelasDenganTrait();
 $obj2->getTraitName();
-
-echo "Nama method ini adalah: " . __METHOD__ . "<br>";
 // __NAMESPACE__ akan menampilkan namespace saat ini.
 ?>
