@@ -30,4 +30,15 @@ echo NAMA; // OK
 // Parameter ketiga di define() bisa digunakan untuk membuat konstanta case-insensitive (TIDAK DIREKOMENDASIKAN).
 define("STATUS", "Aktif", true);
 echo status; // OK, karena case-insensitive
+echo "<hr>";
+
+// Konstanta Bersifat Global
+// Konstanta dapat diakses dari mana saja dalam skrip tanpa memperhatikan scope.
+define("DB_HOST", "localhost");
+
+function testScope() {
+    echo "Mengakses konstanta dari dalam fungsi: " . DB_HOST;
+}
+
+testScope();
 ?>
