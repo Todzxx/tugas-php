@@ -62,4 +62,33 @@ function hitungTotal($harga, $jumlah) {
 }
 $total_belanja = hitungTotal(15000, 3);
 echo "Total belanja Anda: Rp " . number_format($total_belanja, 0, ',', '.') . "<br>";
+cetakGaris();
+
+// 4. Scope Variabel dalam Fungsi
+echo "<h2>4. Scope Variabel dalam Fungsi</h2>";
+// Scope variabel menentukan di mana variabel dapat diakses.
+
+$variabel_global = "Saya adalah variabel global."; // Variabel global
+
+function contohScope() {
+    $variabel_lokal = "Saya adalah variabel lokal."; // Variabel lokal
+    echo $variabel_lokal . "<br>";
+    // echo $variabel_global; // Ini akan menghasilkan error jika tidak menggunakan 'global'
+}
+
+contohScope();
+echo $variabel_global . "<br>";
+// echo $variabel_lokal; // Ini akan menghasilkan error karena variabel_lokal tidak dikenal di luar fungsi
+
+// Menggunakan kata kunci global
+$x = 5;
+$y = 10;
+
+function tambahGlobal() {
+    global $x, $y; // Mengakses variabel global
+    $y = $x + $y; // Mengubah nilai variabel global y
+}
+
+tambahGlobal();
+echo "Nilai y setelah fungsi: " . $y . "<br>"; // Output: 15
 ?>
