@@ -29,4 +29,14 @@ do {
     echo "Angka: " . $j . "<br>";
     $j++;
 } while ($j <= 5);
+echo "<hr>";
+
+// 3. Perulangan for
+echo "<h2>3. Perulangan for</h2>";
+// Perulangan for digunakan ketika kita tahu berapa kali kita ingin mengulang blok kode.
+// Memiliki tiga bagian: inisialisasi, kondisi, dan increment/decrement.
+
+for ($k = 1; $k <= 5; $k++) {
+    echo "Angka: " . $k . "<br>";
+}
 ?>
