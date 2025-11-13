@@ -31,4 +31,22 @@ if ($umur >= 18) {
 } else {
     echo "Anda masih di bawah umur.";
 }
+echo "<hr>";
+
+// 3. Statement if-elseif-else
+echo "<h2>3. Statement if-elseif-else</h2>";
+// Digunakan untuk mengecek beberapa kondisi secara berurutan.
+
+$nilai_ujian = 75;
+echo "Nilai ujian Anda: " . $nilai_ujian . "<br>";
+
+if ($nilai_ujian >= 85) {
+    echo "Predikat: A";
+} elseif ($nilai_ujian >= 75) {
+    echo "Predikat: B";
+} elseif ($nilai_ujian >= 60) {
+    echo "Predikat: C";
+} else {
+    echo "Predikat: D";
+}
 ?>
