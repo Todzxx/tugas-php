@@ -43,4 +43,23 @@ function buatPesan($nama) {
 
 $pesan_selamat = buatPesan("Andi");
 echo $pesan_selamat . "<br>";
+cetakGaris();
+
+// 3. Parameter (Input ke Fungsi/Prosedur)
+echo "<h2>3. Parameter (Input ke Fungsi/Prosedur)</h2>";
+// Parameter memungkinkan kita untuk mengirim data ke dalam fungsi atau prosedur.
+
+// Prosedur dengan parameter
+function sapaPengguna($nama_pengguna) {
+    echo "Halo, " . $nama_pengguna . "! Semoga harimu menyenangkan.<br>";
+}
+sapaPengguna("Budi");
+sapaPengguna("Siti");
+
+// Fungsi dengan beberapa parameter
+function hitungTotal($harga, $jumlah) {
+    return $harga * $jumlah;
+}
+$total_belanja = hitungTotal(15000, 3);
+echo "Total belanja Anda: Rp " . number_format($total_belanja, 0, ',', '.') . "<br>";
 ?>
