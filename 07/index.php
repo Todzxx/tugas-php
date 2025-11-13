@@ -49,4 +49,15 @@ if ($nilai_ujian >= 85) {
 } else {
     echo "Predikat: D";
 }
+echo "<hr>";
+
+// 4. Operator Ternary
+echo "<h2>4. Operator Ternary</h2>";
+// Bentuk singkat dari statement if-else.
+// (kondisi) ? (nilai jika true) : (nilai jika false);
+
+$jenis_kelamin = "Pria";
+$sapaan = ($jenis_kelamin == "Pria") ? "Bapak" : "Ibu";
+
+echo "Sapaan: " . $sapaan;
 ?>
