@@ -41,4 +41,39 @@ function testScope() {
 }
 
 testScope();
+echo "<hr>";
+
+// Magic Constants
+// PHP memiliki sejumlah konstanta bawaan yang nilainya berubah tergantung di mana mereka digunakan.
+echo "<h2>Magic Constants</h2>";
+echo "Baris ini ada di baris ke: " . __LINE__ . "<br>";
+echo "File ini berada di: " . __FILE__ . "<br>";
+echo "Direktori file ini adalah: " . __DIR__ . "<br>";
+
+function namaFungsi() {
+    echo "Nama fungsi ini adalah: " . __FUNCTION__ . "<br>";
+}
+namaFungsi();
+
+class Coba {
+    public function getClassName() {
+        echo "Nama class ini adalah: " . __CLASS__ . "<br>";
+    }
+}
+$obj = new Coba();
+$obj->getClassName();
+
+trait ContohTrait {
+    public function getTraitName() {
+        echo "Nama trait ini adalah: " . __TRAIT__ . "<br>";
+    }
+}
+class KelasDenganTrait {
+    use ContohTrait;
+}
+$obj2 = new KelasDenganTrait();
+$obj2->getTraitName();
+
+echo "Nama method ini adalah: " . __METHOD__ . "<br>";
+// __NAMESPACE__ akan menampilkan namespace saat ini.
 ?>
