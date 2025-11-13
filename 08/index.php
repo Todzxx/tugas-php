@@ -56,4 +56,27 @@ echo "Daftar Umur:<br>";
 foreach ($umur as $nama => $nilai_umur) {
     echo "- " . $nama . " berumur " . $nilai_umur . " tahun.<br>";
 }
+echo "<hr>";
+
+// 5. Statement break dan continue
+echo "<h2>5. Statement break dan continue</h2>";
+
+// break: Digunakan untuk menghentikan eksekusi perulangan secara paksa.
+echo "Contoh break:<br>";
+for ($m = 1; $m <= 10; $m++) {
+    if ($m == 6) {
+        break; // Perulangan akan berhenti saat m mencapai 6
+    }
+    echo "Angka: " . $m . "<br>";
+}
+echo "<br>";
+
+// continue: Digunakan untuk melewati iterasi saat ini dan melanjutkan ke iterasi berikutnya.
+echo "Contoh continue:<br>";
+for ($n = 1; $n <= 10; $n++) {
+    if ($n % 2 == 0) {
+        continue; // Melewati angka genap
+    }
+    echo "Angka ganjil: " . $n . "<br>";
+}
 ?>
