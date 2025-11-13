@@ -27,9 +27,10 @@ define("NAMA", "Budi");
 echo NAMA; // OK
 // echo nama; // Error: Notice: Use of undefined constant nama
 
-// Parameter ketiga di define() bisa digunakan untuk membuat konstanta case-insensitive (TIDAK DIREKOMENDASIKAN).
-define("STATUS", "Aktif", true);
-echo status; // OK, karena case-insensitive
+// Parameter ketiga di define() untuk membuat konstanta case-insensitive sudah usang (deprecated) di PHP 7.3 dan dihapus di PHP 8.0.
+// Penggunaannya akan menyebabkan error pada versi PHP modern.
+// define("STATUS", "Aktif", true);
+// echo status; // Baris ini akan menyebabkan error.
 echo "<hr>";
 
 // Konstanta Bersifat Global
