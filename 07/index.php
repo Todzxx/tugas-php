@@ -16,4 +16,19 @@ echo "Nilai Anda: " . $nilai . "<br>";
 if ($nilai > 70) {
     echo "Selamat, Anda lulus!";
 }
+echo "<hr>";
+
+// 2. Statement if-else
+echo "<h2>2. Statement if-else</h2>";
+// Statement if-else digunakan untuk mengeksekusi satu blok kode jika kondisi true,
+// dan blok kode lain jika kondisi false.
+
+$umur = 17;
+echo "Umur Anda: " . $umur . " tahun.<br>";
+
+if ($umur >= 18) {
+    echo "Anda sudah dewasa.";
+} else {
+    echo "Anda masih di bawah umur.";
+}
 ?>
