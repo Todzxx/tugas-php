@@ -65,4 +65,32 @@ function kali(int $num1, int $num2): int {
     return $num1 * $num2;
 }
 echo "Hasil perkalian 4 * 5 adalah: " . kali(4, 5) . "<br>";
+echo "<hr>";
+
+// 4. Nilai Parameter Default & Variable-length Argument Lists
+echo "<h2>4. Nilai Parameter Default & Variable-length Argument Lists</h2>";
+
+// Nilai Parameter Default
+// Kita bisa memberikan nilai default pada parameter. Jika parameter tidak diberikan saat pemanggilan,
+// nilai default akan digunakan. Parameter dengan nilai default harus diletakkan di akhir.
+function sapaDenganWaktu($nama = "Pengunjung", $waktu = "pagi") {
+    echo "Halo, " . $nama . " selamat " . $waktu . "!<br>";
+}
+
+sapaDenganWaktu("Andi", "siang"); // Menggunakan nilai yang diberikan
+sapaDenganWaktu("Siti"); // Menggunakan nilai default untuk waktu
+sapaDenganWaktu(); // Menggunakan nilai default untuk nama dan waktu
+
+// Variable-length Argument Lists (sejak PHP 5.6)
+// Menggunakan operator ... (splat operator) untuk menerima argumen dalam jumlah tak terbatas.
+function jumlahkanSemua(...$angka) {
+    $total = 0;
+    foreach ($angka as $num) {
+        $total += $num;
+    }
+    return $total;
+}
+
+echo "Jumlah dari 1, 2, 3 adalah: " . jumlahkanSemua(1, 2, 3) . "<br>";
+echo "Jumlah dari 10, 20, 30, 40 adalah: " . jumlahkanSemua(10, 20, 30, 40) . "<br>";
 ?>
