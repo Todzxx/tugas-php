@@ -23,4 +23,24 @@ function cetakGaris() {
 
 tampilkanSalam(); // Memanggil prosedur
 cetakGaris();
+
+// 2. Fungsi dengan Nilai Kembalian
+echo "<h2>2. Fungsi dengan Nilai Kembalian</h2>";
+// Fungsi yang menghitung atau memproses sesuatu dan mengembalikan hasilnya.
+
+function hitungLuasPersegi($sisi) {
+    $luas = $sisi * $sisi;
+    return $luas; // Mengembalikan nilai luas
+}
+
+$sisi_persegi = 5;
+$luas_hasil = hitungLuasPersegi($sisi_persegi);
+echo "Luas persegi dengan sisi " . $sisi_persegi . " adalah: " . $luas_hasil . "<br>";
+
+function buatPesan($nama) {
+    return "Selamat datang, " . $nama . "!";
+}
+
+$pesan_selamat = buatPesan("Andi");
+echo $pesan_selamat . "<br>";
 ?>
