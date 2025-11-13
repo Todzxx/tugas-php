@@ -40,8 +40,8 @@ echo "x setelah %= 5: " . $x . "<br>"; // 1
 $y = "Hello";
 $y .= " World!"; // Sama dengan $y = $y . " World!";
 echo "y setelah .= ' World!': " . $y . "<br>"; // "Hello World!"
-?>
-<?php
+echo "<hr>";
+
 // 3. Operator Perbandingan
 echo "<h2>3. Operator Perbandingan</h2>";
 $p = 10;
@@ -67,4 +67,19 @@ $u = 10;
 echo "Spaceship (s <=> t): " . ($s <=> $t) . "<br>"; // -1 (s lebih kecil dari t)
 echo "Spaceship (t <=> s): " . ($t <=> $s) . "<br>"; // 1 (t lebih besar dari s)
 echo "Spaceship (s <=> u): " . ($s <=> $u) . "<br>"; // 0 (s sama dengan u)
+echo "<hr>";
+
+// 4. Operator Increment/Decrement
+echo "<h2>4. Operator Increment/Decrement</h2>";
+$i = 5;
+echo "Nilai awal i = " . $i . "<br>";
+
+echo "Pre-increment (++i): " . (++$i) . ", sekarang i = " . $i . "<br>"; // 6, i=6
+$j = 5;
+echo "Post-increment (j++): " . ($j++) . ", sekarang j = " . $j . "<br>"; // 5, j=6
+
+$k = 5;
+echo "Pre-decrement (--k): " . (--$k) . ", sekarang k = " . $k . "<br>"; // 4, k=4
+$l = 5;
+echo "Post-decrement (l--): " . ($l--) . ", sekarang l = " . $l . "<br>"; // 5, l=4
 ?>
